@@ -41,19 +41,67 @@ nav a:hover {
 }
 
 header {
+  position: relative;
   height: 200px;
   line-height: 200px;
   background-color: #343e61;
   text-align: center;
-  background-image: url("./imgs/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg");
+  overflow: hidden;
+}
+
+header .bg {
+  position: absolute;
+  inset: 0;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: opacity;
+  animation: crossfade 18s ease-in-out infinite;
+}
+
+header .bg1 {
+  background-image: url("./imgs/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg");
+  z-index: 0;
+}
+
+header .bg2 {
+  background-image: url("./imgs/alain-bonnardeaux-tLxGw_ITs7k-unsplash.jpg");
+  animation-delay: -6s;
+  z-index: 1;
+}
+
+header .bg3 {
+  background-image: url("./imgs/camille-minouflet-d7M5Xramf8g-unsplash.jpg");
+  background-position: center calc(50% + 20px);
+  animation-delay: -12s;
+  z-index: 2;
 }
 
 header h1 {
+  position: relative;
+  z-index: 3;
   display: inline-block;
   vertical-align: middle;
   -webkit-text-stroke: 2px #000;
-  font-size: 48px;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+}
+
+@keyframes crossfade {
+  0% {
+    opacity: 1;
+  }
+  22.222% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  88.888% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h1,
