@@ -22,7 +22,10 @@
           <h2 id="Explore">Explore</h2>
           <div class="flex-row">
             <div class="card">
-              <img src="imgs\vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg" />
+              <img
+                class="card-img"
+                src="imgs\vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg"
+              />
               <h3>Rainforest Hikes</h3>
               <p>
                 Learn about our incredible rainforest by taking a guided hike!
@@ -31,7 +34,10 @@
               <p>Starting at <strong>$40.00 per person</strong>.</p>
             </div>
             <div class="card">
-              <img src="imgs\alain-bonnardeaux-tLxGw_ITs7k-unsplash.jpg" />
+              <img
+                class="card-img"
+                src="imgs\alain-bonnardeaux-tLxGw_ITs7k-unsplash.jpg"
+              />
               <h3>Active Volcano Tours</h3>
               <p>Brave the heat by taking a tour to see an active volcano!</p>
               <hr />
@@ -46,14 +52,20 @@
           <h2 id="Accommodations">Accommodations</h2>
           <div class="flex-row">
             <div class="card">
-              <img src="imgs\sandra-seitamaa-aerb5gwZ4vg-unsplash.jpg" />
+              <img
+                class="card-img"
+                src="imgs\sandra-seitamaa-aerb5gwZ4vg-unsplash.jpg"
+              />
               <h3>Private Homes & Condos</h3>
               <p>Enjoy our luxury private homes and condos by the beach!</p>
               <hr />
               <p>Starting at <strong>$175.49 per day</strong>.</p>
             </div>
             <div class="card">
-              <img src="imgs\francesca-saraco-_dS27XGgRyQ-unsplash.jpg" />
+              <img
+                class="card-img"
+                src="imgs\francesca-saraco-_dS27XGgRyQ-unsplash.jpg"
+              />
               <h3>Hotels</h3>
               <p>Indulge in the amenities at our beach-side hotels!</p>
               <hr />
@@ -63,14 +75,50 @@
         </div>
         <div>
           <h2 id="Touch">Get in touch with a travel agent</h2>
-          <div class="card">
-            <img src="imgs\camille-minouflet-d7M5Xramf8g-unsplash.jpg" />
-            <form>(todo)</form>
+          <div class="flex-column card">
+            <p>
+              Fill out the details below and we will get in touch within 2
+              business days.
+            </p>
+            <form>
+              <label for="name">Full Name*</label>
+              <input id="name" type="text" name="name" />
+
+              <label for="email">Email Address*</label>
+              <input id="email" type="email" name="email" />
+
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+
+              <button type="submit">Request Consultation</button>
+            </form>
           </div>
         </div>
         <div>
           <h2 id="FAQ">FAQ</h2>
-          <div class="card">(todo)</div>
+          <div class="card">
+            <h3>Do Tanitians speak English?</h3>
+            <p>
+              Many younger Tanitians speak fluent English. Very little English
+              is spoken in rural areas, especially by the older residents.
+            </p>
+            <hr />
+            <h3>How should I plan my trip around Holidays?</h3>
+            <p>
+              Taniti enjoys a large number of national holidays, and many
+              tourist attractions and restaurants will be closed on holidays, so
+              plan accordingly.
+            </p>
+            <hr />
+            <h3>What currency is used?</h3>
+            <p>
+              Taniti uses the U.S. dollar as its currency, but many businesses
+              will also accept euros and yen. Several banks facilitate currency
+              exchange, and many businesses accept major credit cards.
+            </p>
+            <hr />
+            <a href="faq.html">View more questions and answers</a>
+          </div>
         </div>
       </main>
       <footer>
